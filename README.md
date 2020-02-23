@@ -52,7 +52,11 @@ add
 ./utils/update.php --init-updates  
 ./utils/update.php --import-osmosis-all  
 
-=======================
+=======================  
 Feb 23, 2020  
 ### postgresSQL account reset password and set privileges  
 https://www.postgresql.org/docs/9.0/sql-alterrole.html  
+Hostname: localhost   
+Port: 5432  
+Maintenance database:  postgres  
+
