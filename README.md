@@ -4,7 +4,7 @@ Set up Nominatim server
 https://nominatim.org/release-docs/latest/appendix/Install-on-Ubuntu-18/  
 
 ## Troubleshooting
-
+--------------  
 Feb 22, 2020
 ### Apache is not starting up   
 
@@ -30,7 +30,7 @@ Feb 22 22:19:13 wk-XPS-8700 systemd[1]: apache2.service: Control process exited,
 Feb 22 22:19:13 wk-XPS-8700 systemd[1]: apache2.service: Failed with result 'exit-code'.  
 Feb 22 22:19:13 wk-XPS-8700 systemd[1]: Failed to start The Apache HTTP Server.  
 
---------------
+--------------  
 sudo ss -ntlp 'sport = 80'  
 State                                  Recv-Q                                  Send-Q                                                                    Local Address:Port                                                                   Peer Address:Port                                    
 LISTEN                                 0                                       128                                                                             0.0.0.0:80                                                                          0.0.0.0:*                                 
@@ -38,7 +38,7 @@ LISTEN                                 0                                       1
 /etc/init.d/lighttpd stop  
 sudo systemctl restart apache2
 
-===================== 
+--------------  
 ### Update nominatim database 3.1.0  
 
 https://nominatim.org/release-docs/latest/admin/Import-and-Update/  
@@ -52,7 +52,7 @@ add
 ./utils/update.php --init-updates  
 ./utils/update.php --import-osmosis-all  
 
-=======================  
+--------------  
 Feb 23, 2020  
 ### postgresSQL account reset password and set privileges  
 https://www.postgresql.org/docs/9.0/sql-alterrole.html  
@@ -60,3 +60,6 @@ Hostname: localhost
 Port: 5432  
 Maintenance database:  postgres  
 
+--------------  
+### update software and migrate database from 3.1.0 -> 3.4.0    
+https://nominatim.org/release-docs/latest/admin/Migration/  
