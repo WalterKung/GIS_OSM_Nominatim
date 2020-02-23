@@ -37,3 +37,16 @@ LISTEN                                 0                                       1
 
 /etc/init.d/lighttpd stop  
 sudo systemctl restart apache2
+
+=====================  
+https://nominatim.org/release-docs/latest/admin/Import-and-Update/  
+
+Update osm
+pip3 install --user osmium
+
+~/Nominatim-3.1.0/build$ vi ./settings/local.php  
+add
+@define('CONST_Pyosmium_Binary', '/srv/nominatim/.local/bin/pyosmium-get-changes')
+./utils/update.php --init-updates  
+./utils/update.php --import-osmosis-all  
+
