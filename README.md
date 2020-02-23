@@ -30,7 +30,7 @@ Feb 22 22:19:13 wk-XPS-8700 systemd[1]: apache2.service: Control process exited,
 Feb 22 22:19:13 wk-XPS-8700 systemd[1]: apache2.service: Failed with result 'exit-code'.  
 Feb 22 22:19:13 wk-XPS-8700 systemd[1]: Failed to start The Apache HTTP Server.  
 
---------------  
+* fix   
 sudo ss -ntlp 'sport = 80'  
 State                                  Recv-Q                                  Send-Q                                                                    Local Address:Port                                                                   Peer Address:Port                                    
 LISTEN                                 0                                       128                                                                             0.0.0.0:80                                                                          0.0.0.0:*                                 
