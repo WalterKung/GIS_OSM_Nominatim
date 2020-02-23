@@ -5,8 +5,8 @@ https://nominatim.org/release-docs/latest/appendix/Install-on-Ubuntu-18/
 
 ## Troubleshooting
 
-
 Feb 22, 2020
+### Apache is not starting up   
 
 see https://askubuntu.com/questions/1053328/failed-to-start-the-apache-http-server  
 
@@ -38,7 +38,9 @@ LISTEN                                 0                                       1
 /etc/init.d/lighttpd stop  
 sudo systemctl restart apache2
 
-=====================  
+===================== 
+### Update nominatim database 3.1.0  
+
 https://nominatim.org/release-docs/latest/admin/Import-and-Update/  
 
 Update osm
@@ -50,3 +52,7 @@ add
 ./utils/update.php --init-updates  
 ./utils/update.php --import-osmosis-all  
 
+=======================
+Feb 23, 2020  
+### postgresSQL account reset password and set privileges  
+https://www.postgresql.org/docs/9.0/sql-alterrole.html  
