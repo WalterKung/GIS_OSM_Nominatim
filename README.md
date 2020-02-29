@@ -63,3 +63,21 @@ Maintenance database:  postgres
 --------------  
 ### update software and migrate database from 3.1.0 -> 3.4.0    
 https://nominatim.org/release-docs/latest/admin/Migration/  
+
+--------------  
+Feb 29, 2020   
+### Try to fix QGIS
+apt-get update  
+follow instruction in https://freegistutorial.com/how-to-install-qgis-on-ubuntu-18-04-bionic-beaver/   
+Get:22 https://qgis.org/debian bionic InRelease [3,687 B]                                         
+Get:35 http://archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,010 kB]  
+Ign:30 http://archive.canonical.com precise Release.gpg                                                                                                                               
+Err:22 https://qgis.org/debian bionic InRelease                                                                                                                                       
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 51F523511C7028C3  
+
+https://gis.stackexchange.com/questions/332245/error-adding-qgis-org-repository-public-key-to-apt-keyring
+udo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
+sudo apt install qgis  
+ 
+
+
