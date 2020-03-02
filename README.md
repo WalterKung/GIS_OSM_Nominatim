@@ -52,6 +52,19 @@ add
 ./utils/update.php --init-updates  
 ./utils/update.php --import-osmosis-all  
 
+
+Ranking in Nominatim
+https://stackoverflow.com/questions/25753269/how-many-rankings-of-indexing-are-there-in-nominatim-api
+Indexing / address calculation
+https://wiki.openstreetmap.org/wiki/Nominatim/Development_overview#Indexing.2Faddress_calculation
+Explaination of log
+https://help.openstreetmap.org/questions/30404/how-long-should-it-take-to-import-north-america-for-nominatim
+
+resume update
+./utils/setup.php --index --create-search-indices
+> 26
+--index-noanalyse
+
 --------------  
 Feb 23, 2020  
 ### postgresSQL account reset password and set privileges  
